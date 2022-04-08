@@ -1,0 +1,380 @@
+{
+	"info": {
+		"_postman_id": "8399837a-01d5-417c-a4a2-e8b4f8a9c701",
+		"name": "EncuestasCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetToken",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"wjosuep13\",\r\n  \"password\": \"testpass\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Users/authenticate",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Users",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InsertEncuesta1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombreEncuesta\": \"Datos\",\r\n  \"descripcionEncuesta\": \"Mis datos\",\r\n  \"campos\": [\r\n    {\r\n      \"nombreCampo\": \"Nombre\",\r\n      \"tituloCampo\": \"Nombre\",\r\n      \"esRequerido\": true,\r\n      \"idTipoCampo\": 1\r\n    },\r\n{\r\n      \"nombreCampo\": \"Peso\",\r\n      \"tituloCampo\": \"Peso\",\r\n      \"esRequerido\": true,\r\n      \"idTipoCampo\": 2\r\n    },\r\n{\r\n      \"nombreCampo\": \"Fecha\",\r\n      \"tituloCampo\": \"Fecha Nacimiento\",\r\n      \"esRequerido\": true,\r\n      \"idTipoCampo\": 3\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Encuesta",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Encuesta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InsertEncuesta2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombreEncuesta\": \"Datos2\",\r\n  \"descripcionEncuesta\": \"Mis datos2\",\r\n  \"campos\": [\r\n    {\r\n      \"nombreCampo\": \"Apellidos\",\r\n      \"tituloCampo\": \"telefono\",\r\n      \"esRequerido\": true,\r\n      \"idTipoCampo\": 1\r\n    },\r\n{\r\n      \"nombreCampo\": \"Telefono\",\r\n      \"tituloCampo\": \"telefono\",\r\n      \"esRequerido\": true,\r\n      \"idTipoCampo\": 2\r\n    },\r\n{\r\n      \"nombreCampo\": \"Fecha\",\r\n      \"tituloCampo\": \"Fecha Registro\",\r\n      \"esRequerido\": true,\r\n      \"idTipoCampo\": 3\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Encuesta",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Encuesta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InsertEncuesta3",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombreEncuesta\": \"Datos3\",\r\n  \"descripcionEncuesta\": \"Mis datos3\",\r\n  \"campos\": [\r\n    {\r\n      \"nombreCampo\": \"texto\",\r\n      \"tituloCampo\": \"campotexto\",\r\n      \"esRequerido\": true,\r\n      \"idTipoCampo\": 1\r\n    },\r\n{\r\n      \"nombreCampo\": \"Fecha\",\r\n      \"tituloCampo\": \"Fecha Registro\",\r\n      \"esRequerido\": true,\r\n      \"idTipoCampo\": 3\r\n    },\r\n{\r\n      \"nombreCampo\": \"numero\",\r\n      \"tituloCampo\": \"numero\",\r\n      \"esRequerido\": true,\r\n      \"idTipoCampo\": 2\r\n    }\r\n\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Encuesta",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Encuesta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteEncuesta1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Encuesta?id=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Encuesta"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateEncuesta2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"idEncuesta\":2,\r\n  \"nombreEncuesta\": \"Datos2\",\r\n  \"descripcionEncuesta\": \"Mis datos2\",\r\n    \"campos\": [\r\n    {   \r\n         \"idCampo\":4,\r\n      \"nombreCampo\": \"Apellidos\",\r\n      \"tituloCampo\": \"apellidos\",\r\n      \"esRequerido\": true,\r\n      \"idTipoCampo\": 1\r\n    }\r\n    ]\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Encuesta",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Encuesta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Link al formulario hacer get en navegador si se desea llenar desde el form",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Encuesta?id=3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Encuesta"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostDataExampleForPreviousLink",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"texto\": \"pureba postman\", \"Fecha\": \"2022-04-20\", \"numero\": \"15\", \"encuesta_id\": 3}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Encuesta/llenar",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Encuesta",
+						"llenar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFilledOfEncuesta",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Encuesta/getOne?id=3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Encuesta",
+						"getOne"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6Indqb3N1ZXAxMyIsIm5iZiI6MTY0OTQzMjY1NCwiZXhwIjoxNjQ5NDMzMjU0LCJpYXQiOjE2NDk0MzI2NTR9.Ydqdd7MvQNNo1-E7Z1hcA2FElb5MxEuPUn1HrTjRSE0"
+		}
+	]
+}
