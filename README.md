@@ -29,6 +29,8 @@ Sustituir el string de conexion en linea 3. en el atributo **WebApiDatabase**
  
 5. Correr el proyecto de VisualStudio desde la aplicación **EncuestasAPI** y no desde IIS Express como se muestra en la imagen.
 
+![Alt text](https://raw.githubusercontent.com/wjosuep13/EncuestasWebApi/main/Images/Captura1.PNG "captura1")
+
 
 6. Importar Coleccion de Postman **EncuestasCollection.postman_collection.json** que se encuentra en la raiz del repositorio.
 
